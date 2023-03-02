@@ -1,5 +1,18 @@
+:root {
+    --dark-gray: hsl(0, 0%, 9%);
+}
+
 body {
-    color: red;
+    color: white;
+    font-family: "Montserrat";
+    background-color: hsl(0, 0%, 15%);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 7px 7px 7px var(--dark-gray);
 }
 
 .box {
