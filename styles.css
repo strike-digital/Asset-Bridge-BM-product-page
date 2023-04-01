@@ -58,12 +58,14 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding: 1px;
+    line-height: normal;
     /* padding-left: 30px; */
 }
 
 .heading-box.center .heading-text {
     text-align: center;
-    font-size: xxx-large;
+    font-size: 2.7rem;
+    /* font-size: xxx-large; */
 }
 
 .heading-box.absolute {
@@ -231,6 +233,7 @@ a {
     z-index: -1100;
     user-select: none;
     filter: blur(5px);
+    transform: scale(1.1, 1)
 }
 
 .background-img.merge img {
