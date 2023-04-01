@@ -6,9 +6,19 @@ body {
     background-image: linear-gradient(rgb(53, 53, 53), rgb(14, 14, 14));
     background-attachment: fixed;
     font-family: "Montserrat";
+    margin: auto;
+    width: 608px;
 }
 
 .heading-box {
+    /* animation-direction: forwards; */
+    animation-duration: .6s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+    animation-name: heading-popup;
+    transform-origin: 100% 0%;
+
+
     position: absolute;
     width: 50%;
     top: 30px;
@@ -16,9 +26,16 @@ body {
     padding-right: 20px;
 
     border-radius: 20px;
-    background-color: rgba(34, 34, 34, 0.781);
+    background-color: rgba(14, 9, 5, 0.863);
     box-shadow: 10px 10px 20px black;
 }
+
+
+@keyframes heading-popup {
+    from {scale: 0%}
+    to {scale: 100%}
+}
+
 
 .heading-text {
     font-weight: bold;
@@ -33,9 +50,26 @@ body {
 }
 
 .heading-backdrop {
+    animation: forwards;
+    animation-duration: 1s;
+    animation-name: popin;
     position: relative;
     width: 100%;
     border-radius: 10px;
+    clip-path: circle(176% at 10rem -30rem);
+}
+
+.heading-backdrop-wrapper {
+    filter: drop-shadow(10px 10px 14px black);
+}
+
+@keyframes popin {
+    from {
+        clip-path: circle(66% at 10rem -30rem)
+    }
+    to {
+        clip-path: circle(176% at 10rem -30rem)
+    }
 }
 
 .box {
