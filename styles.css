@@ -22,7 +22,6 @@ a {
     color: transparent;
 }
 
-
 /* HEADING BOX */
 
 .heading-box {
@@ -315,4 +314,67 @@ a {
 .card p {
     margin-top: 5px;
     margin-bottom: 0px;
+}
+
+.contacts-container {
+    padding-top: 0px;
+}
+
+h3.contacts-text {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 0px;
+    background-color: black;
+}
+
+.contacts-row {
+    position: relative;
+    background-color: rgb(20, 20, 19);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: transparent;
+    /* border-image: linear-gradient(0deg,
+            #ff3300,
+            #ffb71b) 10; */
+
+    display: flex;
+    vertical-align: top;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contacts-row::after {
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -5px;
+    right: -5px;
+    background: var(--red-orange);
+    content: '';
+    z-index: -1;
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 10px black;
+}
+
+.contact-method {
+    /* border-style: solid; */
+    padding: 10px;
+    filter: drop-shadow(5px 5px 10px black);
+    transition: all .1s;
+    /* float: left; */
+    /* width: 20%; */
+    /* height: auto; */
+}
+
+.contact-method:hover {
+    transform: scale(1.1)
+}
+
+.contact-method img {
+    width: 100%;
 }
