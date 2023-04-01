@@ -6,7 +6,7 @@ body {
     background-image: linear-gradient(rgb(53, 53, 53), rgb(14, 14, 14));
     background-attachment: fixed;
     font-family: "Montserrat";
-    margin: auto;
+    /* margin: auto; */
     width: 608px;
 }
 
