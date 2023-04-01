@@ -3,7 +3,8 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(53, 53, 53), rgb(14, 14, 14));
+    /* background-image: linear-gradient(rgb(53, 53, 53), rgb(14, 14, 14)); */
+    background-color: rgb(51, 51, 51);
     background-attachment: fixed;
     font-family: "Montserrat";
     color: white;
@@ -19,45 +20,54 @@ a {
     color: transparent;
 }
 
-.subheading-box {
-    animation-duration: .6s;
-    animation-delay: .7s;
-    animation-fill-mode: both;
-    animation-name: heading-popup;
-    transform-origin: 100% 100%;
 
-    position: absolute;
-    font-size: larger;
-    font-weight: 500;
-    width: 70%;
-    bottom: 10%;
-    right: 20px;
-    padding-left: 10px;
-    /* padding-right: 20px; */
+/* HEADING BOX */
 
+.heading-box {
+    margin-top: 30px;
+    width: 50%;
+    line-height: 2.2rem;
+    z-index: 30;
+    
     border-radius: 20px;
     background-color: rgba(14, 9, 5, 0.863);
     box-shadow: 10px 10px 20px black;
 }
 
-.heading-box {
-    /* animation-direction: forwards; */
+.heading-box.right {
+    margin-left: auto;
+    /* float: right; */
+    padding: 1px;
+    position: relative;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.heading-box.left {
+    margin-top: -60px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 1px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.heading-box.absolute {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+/* .heading-box.left h2 {
+    margin: 60px;
+} */
+
+.heading-box.anim {
     animation-duration: .6s;
     animation-delay: .2s;
     animation-fill-mode: both;
     animation-name: heading-popup;
     transform-origin: 100% 0%;
-
-
-    position: absolute;
-    width: 50%;
-    top: 30px;
-    right: 20px;
-    padding-right: 20px;
-
-    border-radius: 20px;
-    background-color: rgba(14, 9, 5, 0.863);
-    box-shadow: 10px 10px 20px black;
 }
 
 
@@ -66,39 +76,98 @@ a {
     to {scale: 100%}
 }
 
+.heading-box.left .heading-text {
+    text-align: left;
+}
+
+.heading-box.right .heading-text {
+    text-align: right;
+}
+
+/* HEADING TEXT */
 
 .heading-text {
     font-weight: bold;
     font-size: 34px;
-    text-align: right;
-
+    
     background-image: linear-gradient(45deg, #ff3300, #ffb71b);
     background-clip: text;
     color: transparent;
     filter: drop-shadow(4px 4px 14px #000000);
 }
 
+/* HEADING BACKDROP */
+
 .heading-backdrop {
-    animation: forwards;
-    animation-duration: 1s;
-    animation-name: popin;
     position: relative;
     width: 100%;
     border-radius: 10px;
-    clip-path: circle(176% at 10rem -30rem);
+    clip-path: circle(176% at 10em -30em);
+}
+
+
+.heading-backdrop.anim {
+    animation: forwards;
+    animation-duration: 1s;
+    animation-name: popin;
+}
+
+
+@keyframes popin {
+    from {
+        clip-path: circle(66% at 10em -30em)
+    }
+    to {
+        clip-path: circle(176% at 10em -30em)
+    }
 }
 
 .heading-backdrop-wrapper {
     filter: drop-shadow(10px 10px 14px black);
 }
 
-@keyframes popin {
-    from {
-        clip-path: circle(66% at 10rem -30rem)
-    }
-    to {
-        clip-path: circle(176% at 10rem -30rem)
-    }
+/* SUBHEADING */
+
+.subheading-box {
+    font-size: larger;
+    font-weight: 500;
+    width: 70%;
+    z-index: 10;
+    padding-bottom: 5px;
+    
+    border-radius: 20px;
+    background-color: rgba(14, 9, 5, 0.863);
+    box-shadow: 10px 10px 20px black;
+}
+
+.subheading-box.left {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.subheading-box.right {
+    right: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* padding: 20px; */
+    margin-left: auto;
+    /* padding */
+    /* margin-right */
+    /* float: right; */
+    /* display: block; */
+}
+
+.subheading-box.absolute {
+    bottom: 10%;
+    position: absolute;
+}
+
+.subheading-box.anim {
+    animation-duration: .6s;
+    animation-delay: .7s;
+    animation-fill-mode: both;
+    animation-name: heading-popup;
+    transform-origin: 100% 100%;
 }
 
 .box {
@@ -111,8 +180,31 @@ a {
 }
 
 .media {
-    border-radius: 5px;
-    width: 100%;
+    border-radius: 20px;
+    width: 80%;
     height: auto;
-    box-shadow: 10px 10px 20px #000000;
+    /* height:fit-content; */
+    /* height: min-content; */
+    /* height:  */
+    /* height: 100%; */
+    /* box-shadow: 5px 5px 20px #000000; */
+    filter: drop-shadow(5px 5px 10px black);
+    z-index: 20;
+    /* position:relative; */
+}
+
+.media.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* right: 10px; */
+}
+
+.pushup {
+    margin-top: -20px;
+    padding-top: 10px;
+}
+
+.pushleft {
+    margin-right: 5%;
 }
