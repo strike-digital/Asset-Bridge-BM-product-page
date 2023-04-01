@@ -222,7 +222,7 @@ a {
     /* width: 5%; */
 }
 
-.background-img img {
+img.background {
     position: relative;
     width: 100%;
     height: auto;
