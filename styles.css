@@ -33,6 +33,12 @@ a {
     border-radius: 20px;
     background-color: rgba(14, 9, 5, 0.863);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.534);
+
+    transition: all .1s;
+}
+
+.heading-box:hover {
+    transform: scale(1.015)
 }
 
 .heading-box.right {
@@ -150,6 +156,12 @@ a {
     border-radius: 20px;
     background-color: rgba(14, 9, 5, 0.863);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+
+    transition: all .1s;
+}
+
+.subheading-box:hover {
+    transform: scale(1.015)
 }
 
 .subheading-box.left {
@@ -197,7 +209,12 @@ a {
     /* box-shadow: 5px 5px 20px #000000; */
     filter: drop-shadow(5px 5px 10px black);
     z-index: 20;
+    transition: all .1s;
     /* position:relative; */
+}
+
+.media:hover {
+    transform: scale(1.015);
 }
 
 .media.center {
@@ -251,6 +268,8 @@ img.background {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+
+    transition: all .1s;
     
     /* margin-right: 20px; */
     /* box-shadow: 5px 5px 10px black; */
@@ -258,6 +277,10 @@ img.background {
     /* width: 0%; */
     /* margin: auto; */
 } 
+
+.card:hover {
+    transform: scale(1.015);
+}
 
 .card-media {
     width: 60%;
