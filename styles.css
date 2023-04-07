@@ -1,6 +1,7 @@
 :root {
     --dark-gray: hsl(0, 0%, 9%);
-    --red-orange: linear-gradient(45deg, #ff3300, #ffb71b)
+    --red-orange: linear-gradient(45deg, #ff3300, #ffb71b);
+    --hover-amount: 1.015
 }
 
 body {
@@ -38,7 +39,7 @@ a {
 }
 
 .heading-box:hover {
-    transform: scale(1.015)
+    transform: scale(var(--hover-amount))
 }
 
 .heading-box.right {
@@ -161,7 +162,7 @@ a {
 }
 
 .subheading-box:hover {
-    transform: scale(1.015)
+    transform: scale(var(--hover-amount));
 }
 
 .subheading-box.left {
@@ -214,7 +215,7 @@ a {
 }
 
 .media:hover {
-    transform: scale(1.015);
+    transform: scale(var(--hover-amount));
 }
 
 .media.center {
@@ -279,7 +280,7 @@ img.background {
 } 
 
 .card:hover {
-    transform: scale(1.015);
+    transform: scale(var(--hover-amount));
 }
 
 .card-media {
@@ -395,7 +396,7 @@ h3.contacts-text {
 }
 
 .contact-method:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 .contact-method img {
