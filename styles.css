@@ -23,6 +23,19 @@ a {
     color: transparent;
 }
 
+p.center {
+    text-align: center;
+}
+
+#discount-heading {
+    font-size: 40px;
+}
+
+#discount-subheading {
+    color: rgb(160, 160, 160);
+    margin-top: -35px;
+}
+
 /* HEADING BOX */
 
 .heading-box {
