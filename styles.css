@@ -84,10 +84,10 @@ p.center {
     /* font-size: xxx-large; */
 }
 
-.heading-box.ontop {
+/* .heading-box.ontop {
     margin-top: -160%;
     margin-bottom: 120%;
-}
+} */
 
 .heading-box.absolute {
     top: 0px;
