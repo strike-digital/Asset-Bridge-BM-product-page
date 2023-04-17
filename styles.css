@@ -10,9 +10,6 @@ body {
     background-attachment: fixed;
     font-family: "Montserrat";
     color: white;
-
-    /* margin: auto; */
-    /* width: 608px; */
 }
 
 a {
@@ -85,6 +82,11 @@ p.center {
     text-align: center;
     font-size: 2.7rem;
     /* font-size: xxx-large; */
+}
+
+.heading-box.ontop {
+    margin-top: -160%;
+    margin-bottom: 120%;
 }
 
 .heading-box.absolute {
