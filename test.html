@@ -1,3 +1,9 @@
 <script>
-  document.write("haha, hoho")
+  fetch("https://api.github.com/repos/strike-digital/asset_bridge/releases/latest")
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        document.write(data.assets[0].browser_download_url)
+      })
 </script>
